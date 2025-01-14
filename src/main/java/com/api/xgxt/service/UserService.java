@@ -51,7 +51,6 @@ public class UserService {
     public final ResponseEntity<String> addNewUser (List<UserEntity> userlist) {
         for (UserEntity user : userlist) {
             try{
-                user.setPermission(1);
                 if(userRepository.existsById(user.getId())){
                     return StatuesCode.BadRequest("用户ID已存在,请调用Api updateUser");
                 }

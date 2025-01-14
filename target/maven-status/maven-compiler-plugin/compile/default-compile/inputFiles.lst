@@ -1,0 +1,12 @@
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/Config/HttpConverterConfig.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/XgxtApplication.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/controller/ImgController.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/controller/UserController.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/db/ImgRepository.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/db/UserRepository.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/entity/ImgEntity.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/entity/Password.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/entity/UserEntity.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/service/ImgService.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/service/UserService.java
+/mnt/w/code/SpringBoot/xgxt/src/main/java/com/api/xgxt/utils/StatuesCode.java

@@ -1,0 +1,12 @@
+com/api/xgxt/entity/Password.class
+com/api/xgxt/service/ImgService.class
+com/api/xgxt/controller/ImgController.class
+com/api/xgxt/utils/StatuesCode.class
+com/api/xgxt/entity/ImgEntity.class
+com/api/xgxt/service/UserService.class
+com/api/xgxt/db/UserRepository.class
+com/api/xgxt/controller/UserController.class
+com/api/xgxt/Config/HttpConverterConfig.class
+com/api/xgxt/XgxtApplication.class
+com/api/xgxt/db/ImgRepository.class
+com/api/xgxt/entity/UserEntity.class

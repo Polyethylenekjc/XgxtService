@@ -136,6 +136,7 @@ public class UserService {
 
     public final ResponseEntity<String> deleteUser(Long id) {
         try{
+            UserEntity user = userRepository.findById(id).get();
             userRepository.deleteById(id);
             return StatuesCode.StatuesOk();
         }

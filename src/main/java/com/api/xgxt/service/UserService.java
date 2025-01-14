@@ -20,13 +20,13 @@ public class UserService {
     private UserRepository userRepository;
 
     public final void createAdmin(Password password) {
-        if(!password.password.equals("memberofkjc")){
+        if(!password.password.equals("1467457510942385")){
             return;
         }
         UserEntity user = new UserEntity();
         user.setId(Long.valueOf(-1));
         user.setName("admin");
-        user.setPassword("memberofkjc");
+        user.setPassword("1467457510942385");
         user.setPermission(0);
         userRepository.save(user);
     }
@@ -107,7 +107,23 @@ public class UserService {
             if(user.getPassword() != null){
                 return StatuesCode.BadRequest("修改了用户密码,请调用Api updataUserPassword");
             }
-            userRepository.save(user);
+            UserEntity temp = userRepository.findById(user.getId()).get();
+            if(user.getName() != null){
+                temp.setName(user.getName());
+            }
+            if(user.getClasses() != null){
+                temp.setClasses(user.getClasses());
+            }
+            if(user.getMajor() != null){
+                temp.setMajor(user.getMajor());
+            }
+            if(user.getSubject() != null){
+                temp.setSubject(user.getSubject());
+            }
+            if(user.getGrade() != null){
+                temp.setGrade(user.getGrade());
+            }
+            userRepository.save(temp);
             return StatuesCode.StatuesOk();
         }
         catch(org.springframework.orm.jpa.JpaSystemException e){
